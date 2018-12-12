@@ -1,5 +1,5 @@
-- name: Setup Yum repos 
-  shell: scp ctrl.example.com:/etc/yum.repos.d/open.repo /etc/yum.repos.d/open.repo
+#- name: Setup Yum repos 
+#  shell: scp ctrl.example.com:/etc/yum.repos.d/open.repo /etc/yum.repos.d/open.repo
 - name: yum clean
   shell: yum clean all
 - name: Install EPEL repos 
