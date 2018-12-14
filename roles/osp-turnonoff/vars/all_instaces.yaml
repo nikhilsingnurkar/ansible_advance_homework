@@ -1,0 +1,6 @@
+---
+instance_names:
+- "db"
+- "frontend"
+- "app1"
+- "app2"

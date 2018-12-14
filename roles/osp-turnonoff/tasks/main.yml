@@ -1,0 +1,20 @@
+---
+
+  - name: Turn ON instances
+    os_server_actions:
+       action: start
+       cloud: ospcloud
+       server: "{{ item }}"
+       timeout: 200
+    loop: "{{ instance_names }}"
+    when: vm_action == "start"
+
+  - name: Turn ON instances
+    os_server_actions:
+       action: stop
+       cloud: ospcloud
+       server: "{{ item }}"
+       timeout: 200
+    loop: "{{ instance_names }}"
+    when: vm_action == "stop"
+

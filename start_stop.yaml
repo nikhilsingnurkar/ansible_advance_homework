@@ -1,0 +1,8 @@
+- hosts: workstation
+#  become: yes
+  tasks:
+##Start all Instance
+  - name: Create start/stop instance
+    include_role:
+       name: osp-turnonoff
+       vars_from: all_instaces.yaml
