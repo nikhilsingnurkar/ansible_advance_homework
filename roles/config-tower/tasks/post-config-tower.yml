@@ -43,7 +43,6 @@
     tower_password: r3dh4t1!
     ssh_key_data: /root/.ssh/redhat-private-key-2.pem
     username: "{{ opentlc_login }}"
-    ssh_key_unlock: "{{ ssh_key_unlock }}"
 
 - name: Remove secret
   file:
